@@ -25,19 +25,21 @@
 
 
 .menu-container {
-    // width: 100vw;
-    // height: 100vh;
-    // max-width: 480px;
-    // padding: 48px 40px;
-    // z-index: 1;
-    // overflow: scroll;
-    // display: none;
-    // position: fixed;
-    // top: 0;
-    // left: 50%;
-    // translate: -50%;
-    // width: 100%;
-
+    background-color: #fff;
+    @media screen and (max-width: 767px){
+    width: 100vw;
+    height: 100vh;
+    max-width: 480px;
+    padding: 48px 40px;
+    z-index: 1;
+    overflow: scroll;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    width: 100%;
+}
     @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -46,6 +48,22 @@
     }
 }
 
+.menu {
+    @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+.menu-container.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
 
 .hero__container {
     padding: 0;

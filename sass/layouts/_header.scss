@@ -46,8 +46,8 @@
       position: relative;
       color: var(--accent-color);
     }
-  
-    &.current::after {
+    
+  &.current::after {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -56,13 +56,32 @@
       height: 4px;
       background-color: var(--accent-color);
       border-radius: 2px;
-    }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+ }   
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+      line-height: 1.175;
+      }
   }
   
   .contacts {
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+      margin-bottom: 64px;
+       }
+
     @media screen and (min-width: 1200px) {
      display: flex;
      gap: 50px; 
+
+    
     }
     
 
@@ -76,12 +95,12 @@
   
 
   .contacts__link {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // display: flex;
+    // gap: 10px;
+    // justify-content: center;
+    // align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   
     color: var(--primary-text-color);
     font-weight: 500;
@@ -96,10 +115,35 @@
     &:focus {
       color: var(--accent-color);
     }
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.1666666667;
+  
+    }
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    }
   }
   
+.contacts__link--tel {
+  @media screen and (max-width: 767px) {
+    color: var(--accent-color);
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
+}
+
   .contacts__icon {
     fill: currentColor;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   .menu-button {
@@ -119,10 +163,52 @@
     color: var(--accent-color);
 }
 
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .icon-cross {
   fill: currentColor;
 }
 
 .menu-button .icon-cross {
   display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.mob-soc {
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-soc__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33,33,33,.2);
+}
+
+.mob-soc__item:nth-child(1) {
+  padding-left: 0;
+}
+
+.mob-soc__item:nth-child(4) {
+  padding-right: 0;
+  border-right: none;
+}
+
+.mob-soc__link {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: .02em;
+  text-decoration: none;
 }
