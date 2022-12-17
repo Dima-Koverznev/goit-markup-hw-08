@@ -864,7 +864,7 @@ body {
 .job {
   padding-top: 0;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1199px) {
   .job {
     display: none;
   }
