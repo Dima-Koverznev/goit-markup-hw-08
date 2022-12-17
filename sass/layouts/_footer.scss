@@ -6,20 +6,52 @@
   }
   
   .footer__container {
-    display: flex;
+    // display: flex;
+    // align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     align-items: baseline;
+    justify-content: center;
+    }
+  }
+
+
+  
+  .footer-container__wrap {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      margin: 0;
+    }
+
   }
   
   .footer__logo {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+  }
+
+  .footer__logo-address-wrap {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px){
+      margin: 0;
+    }
   }
   
   .address__item {
     display: block;
   
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
   
@@ -56,8 +88,14 @@
   }
   
   .footer__social {
-    margin-left: 70px;
+    text-align: center;
+  //   margin-left: 70px;//
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 94px;
   }
+   }
   
   .social__title, .form-wrap_title {
     margin-bottom: 20px;
@@ -71,6 +109,7 @@
   
   .social__list {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
   
@@ -78,6 +117,7 @@
     width: 44px;
     height: 44px;
   }
+  
   
   .social__link {
     display: flex;
@@ -105,20 +145,44 @@
   
   /* -----footer-form----- */
   .footer__form-wrap {
+    text-align: center;
     margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 94px;
+    }
   }
   
   .footer-form {
-    display: flex;
-    gap: 12px;
+    // display: flex;
+    // gap: 12px;
+    position: relative;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1199px) {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    }
   }
+
+  
   
   .footer-form__field {
     position: relative;
+    margin: 0 auto 20px;
+    max-width: 450px;
+
+    @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 358px;
+    margin: 0;
+    }
   }
   
   .footer-form__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
   
@@ -170,12 +234,18 @@
   }
   
   .footer-form__btn-primary {
-    display: flex;
+    display: block;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   
     width: 200px;
+
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
   }
   
   .footer-btn-icon {

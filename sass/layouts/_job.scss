@@ -1,5 +1,8 @@
 .job {
     padding-top: 0;
+    @media screen and (max-width: 481px) {
+      display: none;
+    }
   }
   
   .title-section--job {
@@ -9,6 +12,7 @@
   .job__list {
     display: flex;
     gap: 30px;
+    
   }
   
   .job__item {

@@ -1,11 +1,21 @@
 .feature__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+ 
   }
   
   .feature__item {
     display: block;
-    width: calc((100% - 90px) / 4);
+     
+    @media screen and(min-width: 768px) {
+    width: calc((100% - 30px) / 2 );
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 270px;
+      }
   }
   
   .feature__icon-wrap {
@@ -27,6 +37,9 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      text-align: center;
+  }
   }
   
   .feature__text {

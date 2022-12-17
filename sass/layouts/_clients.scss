@@ -1,9 +1,16 @@
 .title-section--clients {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      
+    }
   }
   
   .clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
@@ -11,7 +18,16 @@
   .clients__item {
     width: 170px;
     height: 92px;
+
+    @media screen and (max-width:767px) {
+      width:calc((100% - 30px)/2) ;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 60px)/3);
+  }
+  
+}
   
   .clients__link {
     display: flex;

@@ -6,6 +6,29 @@
     line-height: 1.19;
   
     text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 24px;
+      line-height: 1.1666666667;
+    }
+  }
+
+  .header__logo {
+
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 24px;
+      line-height: 1.1666666667;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 88px;
+    }
+    
+    @media screen and (min-width: 1200px){
+      margin-right: 92px;
+    }
   }
   
   .logo-part--color-dark {

@@ -1,9 +1,52 @@
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
   
+
     /* outline: 2px solid red; */
     /* outline - рамка для обведення контенту */
-  }
+
+@media screen and (min-width: 480px) {
+  max-width: 480px;
+  
+}
+
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+  
+}
+
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;
+}
+}
+
+
+.menu-container {
+    // width: 100vw;
+    // height: 100vh;
+    // max-width: 480px;
+    // padding: 48px 40px;
+    // z-index: 1;
+    // overflow: scroll;
+    // display: none;
+    // position: fixed;
+    // top: 0;
+    // left: 50%;
+    // translate: -50%;
+    // width: 100%;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    }
+}
+
+
+.hero__container {
+    padding: 0;
+}
