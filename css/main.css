@@ -253,6 +253,8 @@ body {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -672,6 +674,12 @@ body {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contacts__link--tel {
@@ -700,7 +708,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
   z-index: 2;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .menu-button {
     display: none;
   }
@@ -767,8 +775,8 @@ body {
 .hero {
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
@@ -798,7 +806,7 @@ body {
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
-  font-size: 26px;
+  font-size: 44px;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -909,6 +917,7 @@ body {
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
+  padding: 0, 15px;
 }
 @media screen and (min-width: 1200px) {
   .title-section {
